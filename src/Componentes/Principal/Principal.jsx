@@ -6,6 +6,7 @@ import MenuSuperior from './MenuSuperior';
 
 const { Content, Sider } = Layout;
 const { Title, Paragraph } = Typography;
+
 const Principal = () => {
   const [collapsed, setCollapsed] = useState(false);
   const toggleCollapsed = () => setCollapsed(!collapsed);
@@ -20,65 +21,76 @@ const Principal = () => {
         <Content style={{ margin: '16px' }}>
           <Row className="mb-2">
             <Col span={24}>
-              <h1 style={{ fontSize: '24px', marginBottom: '16px' }}>Centro Tecnológico - FUNIBER</h1>
-              <MigajasdePan paginas={[{ nombre: 'FUNIBER', ruta: '' }]} />
+              <h1 style={{ fontSize: '24px', marginBottom: '16px' }}>PetMatch - Recomendación de Adopción</h1>
+              <MigajasdePan paginas={[{ nombre: 'Inicio', ruta: '' }]} />
             </Col>
           </Row>
+
           <Row gutter={[16, 16]}>
+            {/* Información sobre PetMatch */}
             <Col span={24}>
               <Card bordered={false}>
-                <Title level={3}>¿Qué es FUNIBER?</Title>
+                <Image
+                  src="/petmatch-banner.jpg"
+                  alt="PetMatch"
+                  style={{ width: '100%', height: 'auto', marginBottom: '16px' }}
+                />
+                <Title level={3}>¿Qué es PetMatch?</Title>
                 <Paragraph>
-                  FUNIBER es hoy en día una institución que se desarrolla con la sociedad, a través de diversos convenios y proyectos, participando en actividades, tanto académicas, científicas y de investigación, como de cooperación, desarrollo y crecimiento económico, gracias a su vinculación con universidades e instituciones profesionales para conseguir dar finalmente una Formación Global respetando las identidades locales. Funiber no es una universidad sino que dinamiza la colaboración entre ellas, y son las universidades las que otorgan los títulos.
+                  PetMatch es un sistema de recomendación basado en inteligencia artificial que utiliza el perfil de los usuarios y sus preferencias para sugerir animales que se ajusten a sus necesidades, ya sea por características específicas o por el tipo de ambiente que pueden ofrecer.
+                </Paragraph>
+                <Paragraph>
+                  Con el objetivo de facilitar el proceso de adopción y ayudar a organizaciones como fundaciones y refugios a encontrar el hogar adecuado para los animales, PetMatch conecta de forma rápida y sencilla a adoptantes y animales.
                 </Paragraph>
               </Card>
             </Col>
+
+            {/* Misión */}
             <Col span={24}>
               <Card bordered={false}>
-                  <Image
-                    src="/mision-fam.jpg"
-                    alt="Imagen Misión"
-                    style={{ width: '100%', height: 'auto', marginBottom: '16px' }}
-                  />
+                <Image
+                  src="/mision-petmatch.jpg"
+                  alt="Misión"
+                  style={{ width: '100%', height: 'auto', marginBottom: '16px' }}
+                />
                 <Title level={3}>Misión</Title>
                 <Paragraph>
-                  FUNIBER proyecta sus líneas de actuación basándose en que el conocimiento debe ser puesto al alcance de todos, no sólo de quiénes han terminado una carrera universitaria. Existen diferentes grupos de destinatarios del conocimiento (según el grado de educación previamente alcanzado) y diferentes niveles de profundización en cada uno. Además, cada cual debe poder elegir, el camino que más le satisfaga en la materialización de su proceso personal de aprendizaje y formación cultural e intelectual. En este marco debe encuadrarse la misión que se detalla.
+                  Brindar una plataforma accesible y eficiente para conectar a personas con el deseo de adoptar con animales necesitados de un hogar, utilizando tecnología de recomendación para facilitar la mejor coincidencia entre las características del adoptante y las necesidades del animal.
                 </Paragraph>
                 <Paragraph>
-                  Frente al requerimiento que el aprendizaje debe ser durante toda la vida, nuestra respuesta consiste en el seguimiento de los becados manteniéndoles debidamente informados de las novedades formativas y actividades que se realicen en el área de su especialidad y afines.
+                  Contribuir al bienestar y calidad de vida de los animales y mejorar la experiencia de adopción.
                 </Paragraph>
               </Card>
             </Col>
+
+            {/* Visión */}
             <Col span={24}>
               <Card bordered={false}>
-                  <Image
-                    src="/banner-queesfuniber.jpg"
-                    alt="Imagen Visión"
-                    style={{ width: '100%', height: 'auto', marginBottom: '16px' }}
-                  />
+                <Image
+                  src="/vision-petmatch.jpg"
+                  alt="Visión"
+                  style={{ width: '100%', height: 'auto', marginBottom: '16px' }}
+                />
                 <Title level={3}>Visión</Title>
                 <Paragraph>
-                  Para cumplir su misión, FUNIBER se propone formar ciudadanos críticos y participativos para la Sociedad del Conocimiento, desde la perspectiva del desarrollo personal y el respeto y desarrollo de la identidad nacional, regional y local.
+                  Ser la plataforma líder en recomendaciones de adopción de animales, creando un futuro donde cada animal encuentre un hogar adecuado y amoroso.
                 </Paragraph>
                 <Paragraph>
-                  En su actividad esencial, FUNIBER no compite con las Universidades, trabaja con ellas mancomunadamente complementando sus acciones en dos sentidos:
+                  Garantizar que cada adoptante reciba el apoyo necesario para brindar el cuidado adecuado, todo dentro de un entorno transparente y de confianza.
                 </Paragraph>
+              </Card>
+            </Col>
+
+            {/* Objetivos */}
+            <Col span={24}>
+              <Card bordered={false}>
+                <Title level={3}>Objetivos</Title>
                 <ul>
-                  <li>Diversificando el destinatario del proceso de enseñanza-aprendizaje.</li>
-                  <li>Ayudando a las Universidades a cubrir sus áreas poco desarrolladas.</li>
+                  <li>Facilitar el proceso de adopción de animales mediante recomendaciones personalizadas.</li>
+                  <li>Mejorar la visibilidad de los animales disponibles en fundaciones y refugios.</li>
+                  <li>Promover la adopción responsable y consciente.</li>
+                  <li>Generar conciencia sobre la importancia de la adopción frente a la compra de mascotas.</li>
                 </ul>
-                <Paragraph>
-                  Formar personas capaces de aprender por sí mismas, respondiendo a la exigencia de formación continua.
-                </Paragraph>
-                <Paragraph>
-                  No es suficiente con adquirir el conocimiento, además hay que aprender a aplicarlo en contextos reales. La solución que se propone es el trabajo en grupos virtuales internacionales.
-                </Paragraph>
-                <Paragraph>
-                  Propiciar una formación que permita a los becados sentirse competentes más que competitivos.
-                </Paragraph>
-                <Paragraph>
-                  Esta formación se logra a través de una morfología de "red de Redes de Universidades" en la que cada institución conserva su identidad.
-                </Paragraph>
               </Card>
             </Col>
           </Row>
