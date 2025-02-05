@@ -1,0 +1,9 @@
+.logo-container img {
+    width: 80%;
+    transition: width 0.3s ease;
+  }
+  
+  .menu-collapsed .logo-container img {
+    width: 50%;
+  }
+  

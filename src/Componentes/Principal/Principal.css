@@ -1,0 +1,50 @@
+body {
+  margin: 0; 
+  padding: 0;
+  background-size: cover;
+}
+
+
+.ant-layout-sider {
+  background: #001529;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #1890ff !important;
+}
+
+.ant-menu-dark .ant-menu-item:hover {
+  background-color: #1890ff !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected a {
+  color: #fff !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .ant-menu-dark .ant-menu-item {
+    padding: 0 16px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .ant-menu-dark .ant-menu-item {
+    padding: 0 8px !important;
+  }
+}
